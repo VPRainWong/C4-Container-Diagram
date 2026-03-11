@@ -1,0 +1,30 @@
+<plugin
+		id="com.vp.plugin.sample.c4containerdiagramplugin"
+		name="C4 Container Diagram plugin"
+		description="Sample plugin for generating C4 Container Diagram"
+		provider="Visual Paradigm"
+        version="1.1"
+		class="com.vp.plugin.sample.c4containerdiagram.C4ContainerDiagramPlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.c4containerdiagram.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.c4containerdiagram.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.c4containerdiagram.actionset1.C4ContainerDiagramActionControl"
+					actionType="generalAction"
+      		name="C4 Container Diagram plugin"
+		      description="Sample plugin for generating C4 Container Diagram"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="C4 Container Diagram"
+					toolbarPath="com.vp.plugin.sample.c4containerdiagram.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.c4containerdiagram.C4ContainerDiagramActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
